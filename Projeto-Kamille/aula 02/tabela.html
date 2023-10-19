@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- da comportamentos proprios dento do navegador -->
+    <!-- utf-8 = configura o padrão de escrita dos caracteres em portugues -->
+    <!-- suporte para dar o zoom na pagina -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        th{
+            border: 1px solid black;        
+        }
+
+        td{
+            border: 1px solid black;    
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr> <!--linha da tabela-->
+            <th>coluna o1</th> <!--cabeçalho da coluna-->
+            <th>coluna o2</th>
+            <th>coluna o3</th>
+        </tr>
+        <tr> 
+            <!-- colspan : espaço da coluna -->
+            <!-- rowspan: ocupa quantas linhas forem definidas -->
+            <td colspan="2">coluna 1 </td> <!--coluna da tabela--> 
+            <td rowspan="2">coluna 2 </td>
+            <td>coluna 3 </td>
+        </tr>
+
+        <tr>
+            <td >coluna 1 </td>     
+            <td>coluna 2 </td>
+            <td>coluna 3 </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

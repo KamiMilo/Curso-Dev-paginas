@@ -1,0 +1,12 @@
+/* p{
+    color: red;
+    font-size: 20px;
+} */
+
+.caixaDeTexto
+{
+    border-width: 1px;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-radius: 5px;
+}
