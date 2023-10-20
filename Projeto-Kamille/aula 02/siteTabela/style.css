@@ -1,14 +1,20 @@
 html{
     background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 td{
     border: 1px solid #ddd;
+    padding: 10px;
 }
+
+ td:hover{
+    background-color: #EEEEEE;
+ }
 
 th{
     border: 1px solid #ddd;
-    
+    padding: 10px;
 }
 
 .tabela-curso{
@@ -16,12 +22,32 @@ th{
     width:100%;
     height:auto;
     border-collapse: collapse;
+
+    margin-top: 20px;
 }
 
 .titulo-pagina{
     width: 100%;
     background-color: #333;
     color: white;
-    text-align: center;  
+    text-align: center; 
+
+    padding: 10px; 
 }
+
+img{
+
+    width: 50%;
+
+    /* rsrs spoiler */
+    display: block;
+
+    margin: 0px auto;
+
+}
+img:hover{
+    cursor: pointer;
+}
+
+
 
