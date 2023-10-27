@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 * {
@@ -8,36 +8,33 @@
 }
 
 html {
-    background-color: #fbfbfb;
+    background-color: #FBFBFB;
 }
 
-.Logomarca {
+.logomarca {
     width: 200px;
 }
 
 header {
     padding: 32px 0px;
-    box-shadow: 0px 1px 10px #0000001A;
+    box-shadow: 0px 1px 10px #0000001a;
 }
 
 .menu {
     width: 85%;
     margin: 0 auto;
-    /* background-color: blue; */
 
     display: flex;
     justify-content: space-between;
-
 }
 
 .links-navegacao {
     list-style: none;
 
     display: flex;
-
 }
 
-a {
+li a {
     text-decoration: none;
     color: #4e4b59;
     font-size: 23px;
@@ -49,18 +46,22 @@ li.registrar a {
     color: #ff6e22;
 }
 
-main{
+main {
     padding-top: 48px;
     padding-bottom: 48px;
 }
 
-.painel-principal{
-    /* background-color: blue; */
+.painel-principal {
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 128px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.anuncio-petz{
+.anuncio-petz {
     width: 50%;
 
     display: flex;
@@ -69,22 +70,23 @@ main{
     gap: 30px;
 }
 
-.titulo{
+.titulo {
     font-size: 48px;
     font-weight: 700;
     color: #33303e;
     line-height: 64px;
 }
 
-.descricao{
+.descricao {
     font-size: 24px;
     font-weight: 500;
     color: #4e4b59;
     line-height: 40px;
 }
-.botao-principal{
-    background-color: #ff950d;
-    color: #f5f5f5;
+
+.botao-principal {
+    background-color: #FF950D;
+    color: #F5F5F5;
     padding: 16px 32px;
     border: 1px solid #f5f5f5;
     border-radius: 10px;
@@ -96,11 +98,323 @@ main{
     transition: 0.3s;
 }
 
-.botao-principal:hover{
-    box-shadow: 1px 1px 10px #0000001A;
+.botao-principal:hover {
+    box-shadow: 1px 1px 10px #0000001a;
 }
 
-.fotos-da-esquerda img{
+.fotos-da-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fotos-da-esquerda img {
     width: 150px;
     border-radius: 8px;
+}
+
+.fotos-da-direita img {
+    width: 330px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.imagens-petz {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tipos-perfil {
+    background-color: #ff880026;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+
+.conteudo-card {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards-container{
+    width: 70%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-de-perfil {
+    width: 450px;
+    padding: 32px;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    box-shadow: 2px 2px 25px #4e4b5926;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-de-perfil img {
+    width: 255px;
+}
+
+.link-card{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+#titulo-secundario{
+    width: 52%;
+    text-align: center;
+}
+
+.link-roxo{
+    color: #a944ff;
+}
+
+.link-azul{
+    color: #0088ae;
+}
+
+.valores-da-plataforma{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sobre-valores{
+    width: 50%;
+}
+
+.sobre-valores p{
+ margin-top: 30px;
+}
+
+.valores-topicos{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.coluna-esquerda ,.coluna-direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.valor{
+    margin: 30px;
+    text-align: center;
+}
+
+.valor-box{
+    background-color: red;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #f5f5f5;
+    box-shadow: 0px 4px 15px #00000030;
+}
+.valor p
+{
+    margin-top: 18px;
+    font-weight: 500;
+}
+.span-azul{
+    background-color: #0088AE;
+}
+.span-laranja{
+    background-color: #FF8800;
+}
+.span-roxo{
+    background-color: #A944FF;
+}
+
+footer{
+    background-color: #0088AE;
+}
+.conteudo-rodape{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.copyrigth{
+    color: #F5F5F5;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 1024px){
+
+    .logomarca{
+        width: 220px;
+    }
+
+    .titulo{
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .descricao{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .imagens-petz{
+        gap: 15px;
+    }
+
+    .fotos-da-esquerda img{
+        width: 120px;
+    }
+    .fotos-da-direita img{
+        width: 300px;
+    }
+
+    .botao-principal{
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    #titulo-secundario{
+        width: 70%;
+    }
+
+    .cards-container{
+        width: 80%;
+    }
+    
+    .card-de-perfil{
+        width: 350px;
+        padding: 20px;
+    }
+
+    .card-de-perfil img{
+        width: 230px;
+    }
+    .valores-da-plataforma{
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .sobre-valores{
+        width: 80%;
+        text-align: center;
+    }
+    .valores-topicos{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .logomarca{
+        width: 155px;
+    }
+
+    .painel-principal{
+        flex-direction: column-reverse;
+    }
+
+    .anuncio-petz{
+        width: 80%;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotos-da-esquerda{
+        width: 110px;
+    }
+
+    .fotos-da-direita{
+        width: 280px;
+    }
+}
+
+@media (max-width: 700px){
+    .cards-container{
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-de-perfil{
+        width: 100%;
+        flex-direction: row;
+    }
+    .card-de-perfil img{
+        width: 160px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logomarca{
+        width: 120px;
+    }
+
+    .titulo{
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .descricao{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .anuncio-petz{
+        width: 32%;
+        gap: 15px;
+    }
+
+    .botao-principal{
+        font-size: 15px;
+    }
+
+    .tipos-perfil h2{
+        width: 85%;
+    }
+
+    .card-de-perfil{
+        padding: 15px;
+    }
+    .link-card{
+        font-size: 16px;
+    }
+    .sobre-valores{
+        width: 95%;
+    }
+    .valor{
+        margin: 15px;
+    }
+
+    .conteudo-rodape{
+        gap: 15px;
+        flex-direction: column;
+    }
+
 }
