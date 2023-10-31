@@ -1,0 +1,69 @@
+/* 'Mukta', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mukta:wght@300;400;600&display=swap');
+/*  'Bree Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #0B0923;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
+    padding-top: 50px;
+    z-index: 2;
+}
+
+.menu-nav a {
+    font-size: 25px;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 40px;
+}
+
+input{
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.sessao-principal{
+    position: relative;
+    background: linear-gradient(91deg, rgba(11, 9, 35, 0.89) 51.62%, rgba(11, 9, 35, 0.09) 79.59%);;
+    /* height: 500px;  */
+    /* background-image: url(./assets/imagens/Imagem-banner.jpg); */
+}
+
+.img-fundo{
+    position: relative;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.logo-frase{
+    top: 30%;
+    position: absolute;
+    z-index: 1;
+
+    width: 30% ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 100px;
+}
+
