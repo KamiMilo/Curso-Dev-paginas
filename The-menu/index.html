@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,145 @@
     <title>The-Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- Cabeçalho -->
-<header>
-    <img id="mini-logo" src="./assets/imagens/mini-logo.png" alt="">
-    <div id="barra-pesquisa">
-        <input  type="search" placeholder="barra-pesquisa">
+    <!-- Cabeçalho -->
+    <header>
+        <img id="mini-logo__header" src="./assets/imagens/mini-logo.png" alt="">
+        <div id="barra-pesquisa">
+            <input id="barra-pesquisa" type="search" ">
     </div>
     
-    <div class="menu-nav">
-        <a href="">Home</a>
-        <a href="">Sobre nós</a>
-        <a href="">Populares</a>
-        <a href="">Contatos</a>
-    </div>
-</header>
-
-    <section class="sessao-principal">
-        <img class="img-fundo" src="./assets/imagens/Imagem-banner.jpg" alt="">
-        
-        <div class="logo-frase">
-            <img src="./assets/imagens/logotipos (3).png" alt="">
-            <img src="./assets/imagens/Sabores que fazem você viajar pelo Mundo..png" alt="">
+    <div class=" menu-nav">
+            <a href="">Home</a>
+            <a href="">Sobre nós</a>
+            <a href="">Populares</a>
+            <a href="">Contatos</a>
         </div>
+    </header>
 
-    </section>
-    
+    <main>
+
+        <!-- Sessão-Banner -->
+        <section class="sessao-principal">
+            <img class="img-fundo" src="./assets/imagens/Banner_novo.png" alt="">
+
+            <div class="logo-frase">
+                <img src="./assets/imagens/logotipos (3).png" alt="">
+                <img src="./assets/imagens/Sabores que fazem você viajar pelo Mundo..png" alt="">
+
+                <button>Reservar</button>
+            </div>
+
+        </section>
+
+        <!-- Sessão Sobre -->
+        <section class="sessao-sobre">
+
+            <article class="texto-sobre">
+                <div class="titulo_container">
+                    <h2 id="titulo-sobre">Sobre Nós</h2>
+                    <hr>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti culpa nobis porro sint sapiente
+                    doloribus soluta excepturi exercitationem provident voluptatum. Laboriosam ratione itaque
+                    consequuntur maiores, rerum nulla voluptate nostrum doloremque! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Facilis ex pariatur blanditiis, similique est vero officiis sint
+                    dolore aspernatur.</p>
+
+                <div class="imagens_texto-sobre">
+                    <img src="./assets/imagens/frente-restaurante-preto-e-branco.png" alt="">
+                    <img src="./assets/imagens/prato.png" alt="">
+                    <img src="./assets/imagens/amigos-com-bebida.png" alt="">
+                </div>
+            </article>
+
+            <img id="imagem-um" src="./assets/imagens/restaurante-um.png" alt="">
+        </section>
+
+        <!-- sessão Populares -->
+        <section class="sessao-populares">
+
+            <div id="title-populares">
+                <h2>Populares</h2>
+                <hr>
+            </div>
+
+            <div class="pratos">
+
+                <article id="pratos-esquerda">
+                        <img src="./assets/imagens/pratos-sessao-populares/stake-tartare.png" alt="">
+                        <h3>Steak tartare</h3>
+                        <p>Steak tartare com batatas rústicas e mix de folhas com rabanete laminadas e tomate cereja</p>
+                  
+                        <img src="./assets/imagens/pratos-sessao-populares/misso-lamem.png" alt="">
+                        <h3>Tonkotsu missô lámen</h3>
+                        <p>Macarrão especial de lámen em caldo encorpado de missô levemente apimentado, acompanhado com
+                            8
+                            fatias
+                            de lombo cozido em redução teriaki</p>
+                   
+                </article>
+
+                <hr id="divisor">
+
+                <article id="pratos-direita">                    
+                        <img src="./assets/imagens/pratos-sessao-populares/paillard.png" alt="">
+                        <h3>Paillard de filet</h3>
+                        <p>Paillard de filet, recheado com queijo emmental, acompanha risoto de palmito com alho poró
+                        </p>
+                    
+                        <img src="./assets/imagens/pratos-sessao-populares/salmao.png" alt="">
+                        <h3>Salmão Defumado</h3>
+                        <p>Salmão defumado com purê de funghi secchi e chutney de manga</p>                   
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <img id="mini-logo__footer" src="./assets/imagens/mini-logo.png" alt="">
+        <div class="informacoes"> 
+        <article>
+            <div class="titulo-contatos">
+                <img src="./assets/icones/phone.svg" alt="">
+                <h4>Contatos</h4>
+                <hr>
+            </div>
+
+                <p>themenu@menu.com</p>
+                <p>11 956888-0000</p>
+                <img src="./assets/icones/🦆 icon _Instagram icon_.svg" alt="">
+                <img src="./assets/icones/whatsapp.svg" alt="">
+                <img src="./assets/icones/🦆 icon _email_.svg" alt="">
+        </article>
+
+        <article>
+            <div class="titulo-localizacao">
+                <img src="./assets/icones/🦆 icon _Alternate Map Marker_.svg" alt="">
+                <h4>Localização</h4>
+                <hr>
+            </div>
+                <p>R. Niterói - Centro</p>
+                <p>São Caetano do Sul - 09510-200</p>
+
+        </article>
+
+        <article>
+            <div class="titulo-horarios">
+                <img src="./assets/icones/🦆 icon _Alternate Map Marker_.svg" alt="">
+                <h4>Horários</h4>
+                <hr>
+            </div>
+                <p>seg- sex   08:00  as  22:00 </p>
+                <p>sab- dom   10:00  as  23:00 </p>
+        </article>
+     </div>
+    </footer>
+
 </body>
+
 </html>

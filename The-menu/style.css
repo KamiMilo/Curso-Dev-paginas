@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mukta:wght@300;400;600&display=swap');
 /*  'Bree Serif', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*  'Prata', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Prata&display=swap');
+
 
 * {
     margin: 0px;
@@ -12,11 +15,14 @@ html {
     background-color: #0B0923;
 }
 
+/*  */
+/* //////////////Cabeçalho/////////////////// */
+
 header {
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     padding-top: 50px;
     z-index: 2;
 }
@@ -33,37 +39,223 @@ header {
     gap: 40px;
 }
 
-input{
-    width: 100%;
+input {
+    top: 15px;
+    width: 224px;
     height: 25px;
-    border-radius: 8px;
+    background-color: rgba(95, 95, 95, 0.50);
+    border-radius: 7px;
+    color: white;
 }
 
-.sessao-principal{
+#barra-pesquisa {
+    height: 25px;
     position: relative;
-    background: linear-gradient(91deg, rgba(11, 9, 35, 0.89) 51.62%, rgba(11, 9, 35, 0.09) 79.59%);;
+    right: 60px;
+}
+
+/*  */
+/* //////////Sessão- Principal/////////////// */
+
+.sessao-principal {
+    position: relative;
+    background: linear-gradient(91deg, rgba(11, 9, 35, 0.89) 51.62%, rgba(11, 9, 35, 0.09) 79.59%);
+    ;
     /* height: 500px;  */
     /* background-image: url(./assets/imagens/Imagem-banner.jpg); */
 }
 
-.img-fundo{
+.img-fundo {
     position: relative;
     top: 0;
+
     z-index: -1;
     object-fit: cover;
     width: 100%;
 }
 
 
-.logo-frase{
+.logo-frase {
     top: 30%;
     position: absolute;
     z-index: 1;
 
-    width: 30% ;
+    width: 30%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     padding-left: 100px;
 }
+
+#mini-logo__header {
+    position: relative;
+    bottom: 13px;
+    right: 120px;
+}
+
+.logo-frase button {
+    width: 213px;
+    height: 57px;
+
+    font-family: 'Prata', serif;
+    font-size: 24px;
+
+    border-radius: 20px;
+    background-color: #A29974;
+    ;
+    color: #0B0923;
+    margin-left: 106px;
+}
+
+/*  */
+/* ///////////Sessão-Sobre///////////////// */
+
+.sessao-sobre {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto-sobre {
+    width: 692px;
+    height: 696px;
+    border-radius: 8px;
+    background-color: #A29974;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.41);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.texto-sobre hr {
+    width: 160px;
+    border: solid 1.5px #000000;
+}
+
+
+#titulo-sobre {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #000000;
+}
+
+.texto-sobre p {
+    font-family: 'Mukta', sans-serif;
+    ;
+    font-size: 22px;
+    padding: 58px;
+    padding-top: 0px;
+    text-align: left;
+    color: #000000;
+}
+
+.imagens_texto-sobre {
+    width: 532px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#imagem-um {
+    position: relative;
+    right: 40px;
+    top: 80px;
+    width: 620px;
+    height: 536px;
+}
+
+/*  */
+/*///// Sessão Populares////////// */
+.pratos  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sessao-populares{
+    padding: 100px;
+}
+
+.sessao-populares h2 {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    color: #A29974;
+}
+#title-populares{
+    justify-content: center;
+    margin: 60px 40px;
+}
+#title-populares hr {
+    width: 276px;
+    margin-inline: auto;
+    margin-top: 20px;
+    border: solid 2px #A29974;
+}
+.sessao-populares article{
+    width:448px ;
+    height: 576px;
+}
+
+.sessao-populares  p, h3,
+h3 { 
+    color: white;
+    justify-content: center;
+}
+
+#divisor{
+    height: 800px;
+    border: solid 6px #A29974;
+}
+
+.pratos-esquerda{
+    
+}
+
+/*  */
+/* //////////Footer//////////////// */
+
+footer{
+    height: 325px;
+    background-image: url(./assets/imagens/footer.png);
+
+}
+footer .informacoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#mini-logo__footer{
+    padding: 30px;
+}
+
+.titulo-contatos,
+.titulo-localizacao,
+.titulo-horarios h4, article p{
+    color: white;
+}
+
+
+.titulo-contatos hr,
+.titulo-localizacao hr,
+.titulo-horarios hr{
+    width: 84.3px;
+    border: solid 1px #ffffff;
+}
+
+
+
 
