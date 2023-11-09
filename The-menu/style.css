@@ -207,7 +207,15 @@ input {
 }
 .sessao-populares article{
     width:448px ;
-    height: 576px;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article div{
+    display: flex;
 }
 
 .sessao-populares  p, h3,
@@ -221,8 +229,8 @@ h3 {
     border: solid 6px #A29974;
 }
 
-.pratos-esquerda{
-    
+#pratos-esquerda{
+align-self: flex-end;  
 }
 
 /*  */
@@ -238,6 +246,12 @@ footer .informacoes{
     justify-content: space-around;
     align-items: center;
 }
+
+footer p{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+}
+
 #mini-logo__footer{
     padding: 30px;
 }
@@ -254,6 +268,23 @@ footer .informacoes{
 .titulo-horarios hr{
     width: 84.3px;
     border: solid 1px #ffffff;
+}
+.titulo-contatos img,
+.titulo-localizacao img,
+.titulo-horarios img{
+    display: flex;
+    gap: 20px;
+}
+
+ #flex-titulo {
+    display: flex;
+    flex-direction: row;
+}
+
+#flex-titulo h4{
+    font-family:'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 
