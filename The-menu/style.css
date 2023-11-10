@@ -205,6 +205,9 @@ input {
     margin-top: 20px;
     border: solid 2px #A29974;
 }
+#pratos-direita{
+    margin-left: 8px;
+}
 .sessao-populares article{
     width:448px ;
     height: 600px;
@@ -216,9 +219,16 @@ input {
 
 article div{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.sessao-populares  p, h3,
+#pratos-esquerda > div{
+    flex-direction: row-reverse;
+    
+}
+
+.sessao-populares  p,
 h3 { 
     color: white;
     justify-content: center;
@@ -226,12 +236,29 @@ h3 {
 
 #divisor{
     height: 800px;
-    border: solid 6px #A29974;
+    border: solid 4.5px #A29974;
 }
 
 #pratos-esquerda{
-align-self: flex-end;  
+align-self: flex-end;
+margin-right: 8px;
+
 }
+
+#pratos-esquerda .text-pratos{
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+.text-pratos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
 
 /*  */
 /* //////////Footer//////////////// */
@@ -255,6 +282,12 @@ footer p{
 #mini-logo__footer{
     padding: 30px;
 }
+.titulo-contatos,
+.titulo-localizacao,
+.titulo-horarios{
+    display: flex;
+    flex-direction: column;
+}
 
 .titulo-contatos,
 .titulo-localizacao,
@@ -263,11 +296,13 @@ footer p{
 }
 
 
+
 .titulo-contatos hr,
 .titulo-localizacao hr,
 .titulo-horarios hr{
-    width: 84.3px;
-    border: solid 1px #ffffff;
+    width: 96px;
+    border: solid 2px #ffffff;
+    margin-left: 25px;
 }
 .titulo-contatos img,
 .titulo-localizacao img,
@@ -276,15 +311,27 @@ footer p{
     gap: 20px;
 }
 
+.localizacao{
+
+}
+
  #flex-titulo {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #flex-titulo h4{
     font-family:'Bree Serif', serif;
     font-weight: 300;
     font-size: 24px;
+}
+
+#botao-mapa{
+    padding:  30px;
+    background-color: rgba(217, 217, 217, 0.38);
+
+    ;
 }
 
 
