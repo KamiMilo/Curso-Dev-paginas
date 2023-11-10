@@ -327,11 +327,10 @@ footer p{
     font-size: 24px;
 }
 
-#botao-mapa{
-    padding:  30px;
-    background-color: rgba(217, 217, 217, 0.38);
 
-    ;
+#botao-mapa{
+    padding:17px 40px;
+    background-color: rgba(217, 217, 217, 0.38);
 }
 
 
